@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(".ui-btn").hover(function(){
+        $(this).css("background-color", "#26447F");
+        }, function(){
+        $(this).css("background-color", "#596D94");
+    });
+});
+</script>
+
+<style>
+.ui-bar-d {
+    font-weight: bold;
+    color: white;
+    background-color: #26447F;
+}  
+.ui-page-theme-d {
+    color: white;
+    background-color: #596D94; 
+} 
+.ui-btn {
+    color: white;
+    background-color: #596D94;
+}
+#homePage .ui-header h1 {
+  font-size: 20px;
+}
+#settings .ui-header h1 {
+  font-size: 20px;
+}
+#modulesList .ui-header h1 {
+  font-size: 20px;
+}
+#timeTable .ui-header h1 {
+  font-size: 20px;
+}
+</style>
+
+</head>
+<body>
+    
+<!-- homePage -->
+
+<div data-role="page" id="homePage" data-theme="d">
+  <div data-role="header" data-theme="d">
+    <h1>Grange_Mobile</h1>
+    <h2>Your DIT Guide</h2>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#homePage" data-icon="home" style="background-color:#26447F">Home</a></li>
+        <li><a href="#" data-icon="search" style="background-color:#26447F">Search</a></li>
+        <li><a href="#settings" data-icon="gear" style="background-color:#26447F">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+    
+    <div data-role="main" data-type="vertical">
+    <a href="#" class="ui-btn">DIT News</a>
+    <a href="#" class="ui-btn">Campus Map</a>
+    <a href="#timeTable" class="ui-btn">My Timetable</a>
+    <a href="#" class="ui-btn">Library Search</a>
+    <a href="#" class="ui-btn">Students' Union</a>
+  </div>
+    
+  <div data-role="footer" data-position="fixed" data-theme="d">
+    <h1>© Dublin Institute of Technology</h1>
+  </div>
+</div> 
+
+<!-- End of homePage -->
+<!-- Settings -->
+
+<div data-role="page" id="settings" data-theme="d">
+  <div data-role="header" data-position="fixed" data-theme="d">
+    <h1>Grange Mobile</h1>
+    <h2>Your DIT Guide</h2>
+  <div data-role="navbar">
+      <ul>
+        <li><a href="#homePage" data-icon="home" style="background-color:#26447F">Home</a></li>
+        <li><a href="#" data-icon="search" style="background-color:#26447F">Search</a></li>
+        <li><a href="#settings" data-icon="gear" style="background-color:#26447F">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Welcome to the Setting Page. Here you can update your student details, course modules, language selection and contact the helpdesk. </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada eros diam, quis tincidunt lacus congue nec. Vestibulum quis consectetur leo, vitae ullamcorper felis. Duis vel erat sem. Donec urna dui, tristique a sapien id, rutrum varius enim. Nullam in felis ligula.</p>
+  </div>
+
+    <div data-role="main" data-type="vertical">
+        <a href="#" class="ui-btn">Profile</a>
+        <a href="#modulesList" class="ui-btn">Modules</a>
+        <a href="#" class="ui-btn">App Notifications</a>
+        <a href="#" class="ui-btn">Sound & Accessibility</a>
+        <a href="#" class="ui-btn">Language</a>
+        <a href="#" class="ui-btn">Help</a>
+      </div>
+    
+  <div data-role="footer" data-position="fixed" data-theme="d">
+    <h1>© Dublin Institute of Technology</h1>
+  </div>
+</div>
+
+<!-- End of Settings -->
+<!-- modulesList -->
+
+<div data-role="page" id="modulesList" data-theme="d">
+  <div data-role="header" data-position="fixed" data-theme="d">
+    <h1>Grange Mobile</h1>
+    <h2>Your DIT Guide</h2>
+  <div data-role="navbar">
+      <ul>
+        <li><a href="#homePage" data-icon="home" style="background-color:#26447F">Home</a></li>
+        <li><a href="#" data-icon="search" style="background-color:#26447F">Search</a></li>
+        <li><a href="#settings" data-icon="gear" style="background-color:#26447F">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+    
+<form method="post" action="/action_page_post.php">
+    <div> 
+        <fieldset data-role="controlgroup" class=ui-fieldcontain-d>
+        <legend>Please tick and submit the list of modules that you would like to register for 2016/17 Semester 2:</legend>
+          <label for="Digital Media Tools">Digital Media Tools</label>
+          <input type="checkbox" name="favcolor" id="Digital Media Tools" value="Digital Media Tools">
+          <label for="Production & Prototyping">Production & Prototyping</label>
+          <input type="checkbox" name="favcolor" id="Production & Prototyping" value="Production & Prototyping">
+          <label for="Information Modelling">Information Modelling</label>
+          <input type="checkbox" name="favcolor" id="Information Modelling" value="Information Modelling">
+          <label for="Authoring Principles">Authoring Principles</label>
+          <input type="checkbox" name="favcolor" id="Authoring Principles" value="Authoring Principles">
+          <label for="Design Practice">Design Practice</label>
+          <input type="checkbox" name="favcolor" id="Design Practice" value="Design Practice">
+          <label for="Social Media Applications">Social Media Applications</label>
+          <input type="checkbox" name="favcolor" id="Social Media Applications" value="Social Media Applications">
+          <label for="User Interaction Design">User Interaction Design</label>
+          <input type="checkbox" name="favcolor" id="User Interaction Design" value="User Interaction Design">
+          <label for="Project Dev & UX Treatment">Project Dev & UX Treatment</label>
+          <input type="checkbox" name="favcolor" id="Project Dev & UX Treatment" value="Project Dev & UX Treatment">
+      </fieldset>
+    <a href="#homePage" class="ui-btn ui-btn-inline">Submit</a>
+    
+  </div>
+    </form>
+    
+ <div data-role="footer" data-position="fixed" data-theme="d">
+    <h1>© Dublin Institute of Technology</h1>
+  </div>
+</div> 
+
+<!-- End of modulesList -->
+<!-- timeTable -->
+
+<div data-role="page" id="timeTable" data-theme="d">
+  <div data-role="header" data-position="fixed" data-theme="d">
+    <h1>Grange Mobile</h1>
+    <h2>Your DIT Guide</h2>
+  <div data-role="navbar">
+      <ul>
+        <li><a href="#homePage" data-icon="home" style="background-color:#26447F">Home</a></li>
+        <li><a href="#" data-icon="search" style="background-color:#26447F">Search</a></li>
+        <li><a href="#settings" data-icon="gear" style="background-color:#26447F">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+     <p>All course timetables are subject to change. Please revisit for up to date class times.</p>
+
+    <table data-role="table"  class="ui-responsive" id="myTable">
+      <thead>
+        <tr>
+          <th data-priority="9">Day</th>
+          <th>9.00-10.00</th>
+          <th data-priority="1">10.00-11.00</th>
+          <th data-priority="2">11.00-12.00</th>
+          <th data-priority="3">12.00-13.00</th>
+          <th data-priority="4">13.00-14.00</th>
+          <th data-priority="5">14.00-15.00</th>
+          <th data-priority="6">15.00-16.00</th>
+          <th data-priority="7">16.00-17.00</th>
+          <th data-priority="8">17.00-18.00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MONDAY</td>
+          <td>Digital Media Tools</td>
+          <td>Digital Media Tools</td>
+          <td>Digital Media Tools</td>
+          <td></td>
+          <td></td>
+          <td>Design Practice</td>
+          <td>Design Practice</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>TUESDAY</td>
+          <td></td>
+          <td>Social Media Applications</td>
+          <td>Social Media Applications</td>
+          <td>Social Media Applications</td>
+          <td></td>
+          <td></td>
+          <td>Information Modelling</td>
+          <td>Information Modelling</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>WEDNESDAY</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Authoring Principles</td>
+          <td>Authoring Principles</td>
+          <td>Authoring Principles</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>FRIDAY</td>
+          <td>Production & Prototyping</td>
+          <td>Production & Prototyping</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>THURSDAY</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Project Dev & UX Treatment</td>
+          <td>Project Dev & UX Treatment</td>
+          <td>Project Dev & UX Treatment</td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div data-role="footer" data-position="fixed" data-theme="d">
+    <h1>© Dublin Institute of Technology</h1>
+  </div>
+</div> 
+
+<!-- End of timeTable -->
+
+
+</body>
+</html>
